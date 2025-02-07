@@ -69,5 +69,5 @@ p {
 .image-container img {
   max-width: 100%; /* Let the image resize responsively */
   height: auto; /* Maintain aspect ratio */
-  width: 400px; /* Set a fixed width for the image */
+  width: 200px; /* Set a fixed width for the image */
 }
