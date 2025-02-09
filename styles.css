@@ -90,8 +90,8 @@ p {
   border: 1px solid #ddd;
   padding: 10px;
   border-radius: 8px;
-  width: 280px; /* Fixed width for the movie card */
-  height: 150px; /* Fixed height for the movie card */
+  width: 350px; /* Fixed width for the movie card */
+  height: 200px; /* Fixed height for the movie card */
   box-sizing: border-box; /* Ensures padding doesn't affect width */
   flex-shrink: 0; /* Prevent shrinking of the card */
 }
