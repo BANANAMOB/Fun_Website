@@ -97,7 +97,7 @@ p {
 }
 
 .movie-card img {
-  width: 150px; /* Fixed width for the movie poster */
+  width: 122px; /* Fixed width for the movie poster */
   height: auto;
   border-radius: 5px;
   margin-right: 20px; /* Space between image and text */
