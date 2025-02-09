@@ -71,3 +71,66 @@ p {
   height: auto; /* Maintain aspect ratio */
   width: 200px; /* Set a fixed width for the image */
 }
+
+/* Movie grid styling */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  gap: 20px; /* Fixed space between grid items */
+  padding: 20px;
+  justify-items: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+}
+
+/* Styling for movie cards */
+.movie-card {
+  display: flex;
+  align-items: center; /* Aligns the poster and info vertically */
+  text-align: left; /* Aligns text to the left */
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  width: 280px; /* Fixed width for the movie card */
+  height: 150px; /* Fixed height for the movie card */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  flex-shrink: 0; /* Prevent shrinking of the card */
+}
+
+.movie-card img {
+  width: 90px; /* Fixed width for the movie poster */
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px; /* Space between image and text */
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column; /* Stack the title and director vertically */
+  justify-content: center; /* Center them vertically */
+  max-width: 150px; /* Limit the width of the movie info area */
+}
+
+.movie-card h3 {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.movie-card p {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Media query for medium screens (tablets) */
+@media (max-width: 920px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* Media query for smaller screens (phones) */
+@media (max-width: 620px) {
+  .movie-grid {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+}
+
