@@ -70,7 +70,7 @@ p {
   width: 200px; /* Set a fixed width for the image */
 }
 
-/* Movie grid styling */
+/* Movie grid styling /////////////////////////////////////////////////////////////////////// */
 .movie-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
@@ -132,3 +132,48 @@ p {
   }
 }
 
+/* Photo grid styling /////////////////////////////////////////////////////////////////////// */
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 columns by default */
+  gap: 20px; /* Fixed space between grid items */
+  padding: 20px;
+  justify-items: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+}
+
+/* Styling for movie cards */
+.photo-card {
+  display: flex;
+  align-items: center; /* Aligns the poster and info vertically */
+  text-align: left; /* Aligns text to the left */
+  padding: 10px;
+  width: 95%; /* Fixed width for the movie card */
+  height: auto; /* Fixed height for the movie card */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.photo-card img {
+  width: auto; /* Fixed width for the movie poster */
+  max-width: 75%;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px; /* Space between image and text */
+}
+
+.photo-info {
+  display: flex;
+  flex-direction: column; /* Stack the title and director vertically */
+  justify-content: center; /* Center them vertically */
+  max-width: 15%; /* Limit the width of the movie info area */
+}
+
+.photo-card h3 {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.photo-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
