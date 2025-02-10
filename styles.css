@@ -177,3 +177,14 @@ p {
   font-size: 1rem;
   line-height: 1.5;
 }
+
+@media (max-width: 620px) {
+  .photo-card h3 {
+    font-size: 0.6rem;
+    margin-top: 0;
+  }
+  .photo-card p {
+    font-size: 0.5rem;
+    line-height: 1.5;
+  }
+}
