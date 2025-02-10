@@ -29,14 +29,12 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25%;
   width: 100%;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  height: 25%;
   width: 100%;
 }
 
