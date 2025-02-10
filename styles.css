@@ -105,7 +105,7 @@ p {
   display: flex;
   flex-direction: column; /* Stack the title and director vertically */
   justify-content: center; /* Center them vertically */
-  max-width: 250px; /* Limit the width of the movie info area */
+  max-width: 100%; /* Limit the width of the movie info area */
 }
 
 .movie-card h3 {
@@ -166,7 +166,7 @@ p {
   display: flex;
   flex-direction: column; /* Stack the title and director vertically */
   justify-content: center; /* Center them vertically */
-  max-width: 15%; /* Limit the width of the movie info area */
+  max-width: 100%; /* Limit the width of the movie info area */
 }
 
 .photo-card h3 {
