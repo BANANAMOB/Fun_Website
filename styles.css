@@ -70,7 +70,7 @@ p {
   width: 200px; /* Set a fixed width for the image */
 }
 
-/* Movie grid styling /////////////////////////////////////////////////////////////////////// */
+/* movie + writing styling /////////////////////////////////////////////////////////////////////// */
 .movie-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
@@ -132,7 +132,7 @@ p {
   }
 }
 
-/* Photo grid styling /////////////////////////////////////////////////////////////////////// */
+/* photo + art styling /////////////////////////////////////////////////////////////////////// */
 .photo-grid {
   display: grid;
   grid-template-columns: 1fr; /* 1 columns by default */
@@ -189,3 +189,70 @@ p {
     line-height: 1.5;
   }
 }
+
+/* Music styling /////////////////////////////////////////////////////////////////////// */
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columns by default */
+  gap: 20px; /* Fixed space between grid items */
+  padding: 20px;
+  justify-items: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+}
+
+/* Styling for movie cards */
+.music-card {
+  display: flex;
+  align-items: center; /* Aligns the poster and info vertically */
+  text-align: left; /* Aligns text to the left */
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  width: auto;
+  max-width: 40%;/* Fixed width for the movie card */
+  height: auto; /* Fixed height for the movie card */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  flex-shrink: 0; /* Prevent shrinking of the card */
+}
+
+.music-card img {
+  width: auto; /* Fixed width for the movie poster */
+  max-width: 50%; /* Fixed width for the movie poster */
+  height: auto;
+  max-height: 650px; /* Fixed width for the movie poster */
+  border-radius: 5px;
+  margin-right: 20px; /* Space between image and text */
+}
+
+.music-info {
+  display: flex;
+  flex-direction: column; /* Stack the title and director vertically */
+  justify-content: center; /* Center them vertically */
+  max-width: 100%; /* Limit the width of the movie info area */
+}
+
+.music-card h3 {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.music-card p {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Media query for smaller screens (phones) */
+@media (max-width: 620px) {
+  .music-grid {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+  .music-card h3 {
+    font-size: 0.6rem;
+    margin-top: 0;
+  }
+  .music-card p {
+    font-size: 0.5rem;
+    line-height: 1.5;
+  }
+}
+
