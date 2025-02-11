@@ -217,7 +217,6 @@ p {
 
 .music-card img {
   width: auto; /* Fixed width for the movie poster */
-  max-width: 50%; /* Fixed width for the movie poster */
   height: auto;
   max-height: 650px; /* Fixed width for the movie poster */
   border-radius: 5px;
