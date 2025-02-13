@@ -88,17 +88,18 @@ p {
   border: 1px solid #ddd;
   padding: 10px;
   border-radius: 8px;
-  width: 350px; /* Fixed width for the movie card */
-  height: 200px; /* Fixed height for the movie card */
+  width: 100%; /* Fixed width for the movie card */
+  height: 100%; /* Fixed height for the movie card */
   box-sizing: border-box; /* Ensures padding doesn't affect width */
   flex-shrink: 0; /* Prevent shrinking of the card */
 }
 
 .movie-card img {
-  width: 122px; /* Fixed width for the movie poster */
+  width: auto; /* Fixed width for the movie poster */
   height: auto;
   border-radius: 5px;
   margin-right: 20px; /* Space between image and text */
+  max-width: 40%;
 }
 
 .movie-info {
@@ -129,6 +130,9 @@ p {
 @media (max-width: 620px) {
   .movie-grid {
     grid-template-columns: 1fr; /* 1 column */
+  }
+  .movie-card {
+    flex-shrink: 0;
   }
 }
 
@@ -180,6 +184,9 @@ p {
 }
 
 @media (max-width: 620px) {
+  .photo-card {
+    flex-shrink: 0; /* Prevent shrinking of the card */
+  }
   .photo-card h3 {
     font-size: 0.6rem;
     margin-top: 0;
@@ -209,7 +216,6 @@ p {
   padding: 10px;
   border-radius: 8px;
   width: auto;
-  max-width: 40%;/* Fixed width for the movie card */
   height: auto; /* Fixed height for the movie card */
   box-sizing: border-box; /* Ensures padding doesn't affect width */
   flex-shrink: 0; /* Prevent shrinking of the card */
@@ -217,6 +223,7 @@ p {
 
 .music-card img {
   width: auto; /* Fixed width for the movie poster */
+  max-width: 40%;/* Fixed width for the movie card */
   height: auto;
   max-height: 650px; /* Fixed width for the movie poster */
   border-radius: 5px;
@@ -244,6 +251,9 @@ p {
 @media (max-width: 620px) {
   .music-grid {
     grid-template-columns: 1fr; /* 1 column */
+  }
+  .music-card {
+    flex-shrink: 0;
   }
   .music-card h3 {
     font-size: 0.6rem;
