@@ -27,14 +27,14 @@ a:hover {
 
 .container_index {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   width: 100%;
 }
 
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   width: 100%;
 }
 
@@ -42,7 +42,7 @@ a:hover {
   padding: 20px;
   border-radius: 8px;
   width: auto; /* Let the columns grow or shrink based on their content */
-  margin: 0; /* Make sure there’s no margin around the columns */
+  margin: auto; /* Make sure there’s no margin around the columns */
   white-space: nowrap; /* Prevent text wrapping inside the columns */
 }
 
