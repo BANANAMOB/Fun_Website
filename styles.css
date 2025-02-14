@@ -132,7 +132,7 @@ p {
     grid-template-columns: 1fr; /* 1 column */
   }
   .movie-card {
-    flex-shrink: 0;
+    min-width: 260px;
   }
 }
 
@@ -185,7 +185,7 @@ p {
 
 @media (max-width: 620px) {
   .photo-card {
-    flex-shrink: 0; /* Prevent shrinking of the card */
+    min-width: 260px; /* Prevent shrinking of the card */
   }
   .photo-card h3 {
     font-size: 0.6rem;
@@ -253,7 +253,7 @@ p {
     grid-template-columns: 1fr; /* 1 column */
   }
   .music-card {
-    flex-shrink: 0;
+    min-width: 260px;
   }
   .music-card h3 {
     font-size: 0.6rem;
